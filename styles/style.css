@@ -332,6 +332,7 @@ body.select-book {
   background-color: #f5ecc9;
   margin: 0;
   padding: 0 133px;
+  margin-bottom: 50px;
 }
 
 /* Back Button Design */
@@ -344,7 +345,6 @@ body.select-book {
   background-color: #f5ecc9;
   margin: 30px 0 50px;
   text-decoration: none;
-  font-weight: bold;
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
@@ -396,7 +396,6 @@ body.select-book {
           appearance: none;
   background-color: transparent;
   border: 2px solid #122620;
-  border-radius: 3px;
   position: relative;
   cursor: pointer;
   margin: 0;
@@ -451,14 +450,13 @@ body.select-book {
   color: #4a3f32;
   background-color: #f5ecc9;
   padding: 6px 12px;
-  border-radius: 5px;
   width: -moz-fit-content;
   width: fit-content;
   border: 1px solid #d3c3a8;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
   margin-left: auto;
-  margin-bottom: 16px;
+  bottom: 60px;
 }
 
 .select-book .sort label {
@@ -476,6 +474,7 @@ body.select-book {
           appearance: none;
   outline: none;
   padding-right: 20px;
+  font-weight: bold;
 }
 
 .select-book .sort::after {
@@ -487,53 +486,169 @@ body.select-book {
   pointer-events: none;
 }
 
+select#sort {
+  font-weight: bold;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+select#sort option {
+  font-weight: bold;
+  background: #B68D40;
+  color: #F4EBD0;
+}
+
+/* Rooms */
 .select-book .rooms {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 26px; /* Adds space between each room */
 }
 
 .select-book .room {
   display: flex;
-  align-items: center;
+  flex-direction: row; /* Image on the left, details on the right */
+  align-items: center; /* Vertically aligns image and details */
   background: #EAD7A7;
-  padding: 5px;
-  border-radius: 14px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.08);
-  gap: 30px;
+  gap: 20px; /* Space between image and details */
 }
 
 .select-book .room img {
-  width: 280px;
-  height: 300px;
-  border-radius: 12px;
+  width: 250px; /* Fixed image width */
+  height: 300px; /* Fixed image height */
   -o-object-fit: cover;
-     object-fit: cover;
-  flex-shrink: 0;
+     object-fit: cover; /* Ensures the image is cropped properly */
+  flex-shrink: 0; /* Prevents image from shrinking */
 }
 
 .select-book .details {
-  flex: 1;
-  height: 190px;
-  background: #EAD7A7;
-  border-radius: 12px;
+  flex: 1; /* The details section takes up remaining space */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-.select-book .details h3 {
-  margin: 0 0 8px;
-  font-size: 24px;
-  color: #122620;
+  justify-content: space-between; /* Distributes space between the elements */
+  padding: 0 15px;
+  text-align: left; /* Align text to the left */
 }
 
 .select-book .details p {
   margin: 0;
-  font-size: 20px;
+  font-size: 14px;
   color: #4a3f32;
   font-weight: bold;
+}
+
+.select-book .details h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #333; /* Dark gray for better readability */
+  font-weight: bold;
+}
+
+.select-book .details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.select-book .details ul li {
+  font-size: 16px;
+  color: #4a3f32;
+  margin-bottom: 6px; /* Adds space between list items */
+}
+
+.select-book .details .sc-b4f77096-6.eTnSUG {
+  margin-top: 15px; /* Adds space between the list and the button */
+}
+
+.select-book .details .QtJlv {
+  background-color: #6b5325;
+  color: #F4EBD0;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.select-book .details .QtJlv .arrow {
+  margin-left: 8px;
+}
+
+.select-book .details .QtJlv:hover {
+  background-color: #B68D40;
+}
+
+/* Select Button for Each Room */
+.select-btn {
+  background: none;
+  border: 2px solid #6b5325;
+  color: #6b5325;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100px;
+  left: 460px;
+  position: relative;
+}
+
+.select-btn:hover {
+  background-color: #f5ecc9; /* Light background on hover */
+}
+
+.back-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Include compiled SCSS here */
+.cart-section {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  padding: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-width: medium;
+}
+
+.cart-content {
+  display: flex;
+  flex-direction: column; /* Arrange the content in a vertical layout */
+  align-items: flex-start;
+}
+
+.cart-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column; /* Stack the text content vertically */
+  gap: 5px; /* Add space between each line of text */
+}
+
+.cart-details p {
+  margin: 0;
+}
+
+.cart-title {
+  font-weight: bold;
+}
+
+.cart-total {
+  font-size: 1.2rem;
+  color: #333;
 }
 
 body {

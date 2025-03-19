@@ -7,6 +7,21 @@
 @import 'select-room';
 @import 'register';
 
+
+$primary-color: #FCEEC3;
+$secondary-color: #F4EBD0;
+$dark-color: #122620;
+$accent-color: #D6AD60;
+$text-color: #878A71;
+$btn:#C09736;
+$text-secondary: $dark-color;
+$footer-bg: darken($primary-color, 20%);
+$link-hover: lighten($accent-color, 10%);
+$input-bg: darken($secondary-color, 10%);
+$input-border: $text-color;
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -136,3 +151,4 @@ body {
 ::-webkit-scrollbar-thumb:active {
     background: #D6AD60; /* Even lighter gold when active */
 }
+

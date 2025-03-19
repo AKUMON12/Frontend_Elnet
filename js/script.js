@@ -1,3 +1,4 @@
+// For browser compatibility, use the following code to ensure the DOM is fully loaded before executing the JavaScript code.
 document.addEventListener("DOMContentLoaded", function () {
     const filters = {
         kingBed: document.getElementById("kingBed"),
