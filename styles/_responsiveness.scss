@@ -1,0 +1,285 @@
+/* Ensure the entire layout is responsive */
+@media (max-width: 1200px) {
+  /* Adjust the padding for larger screens */
+  .container {
+    padding: 0 40px;
+  }
+
+  .rooms-container {
+    padding: 50px;
+  }
+
+  .book-now_room-list .room-card {
+    height: auto;
+  }
+
+  .room-details {
+    padding: 0 20px;
+  }
+
+  /* Adjust navbar padding and layout */
+  .book_now .navbar {
+    height: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Adjust layout for medium screens (tablets) */
+  .navbar {
+    height: 80px;
+  }
+
+  .room-details {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .rooms-container {
+    padding: 50px;
+    display: block;
+  }
+
+  .hotel-footer {
+    padding: 40px 20px;
+  }
+
+  /* Adjust the layout for footer */
+  .hotel-footer .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .select-book .container {
+    flex-direction: column;
+  }
+
+  .select-book .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .select-book .content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust layout for smaller screens (phones) */
+  .container {
+    padding: 0 15px;
+  }
+
+  .book_now .navbar {
+    height: 60px;
+  }
+
+  .book_now .navbar .navbar-nav {
+    margin-right: 10px;
+    gap: 8px;
+  }
+
+  .room-details {
+    padding: 0 15px;
+  }
+
+  .book-now_room-list .room-card {
+    height: auto;
+  }
+
+  /* Adjust the book-now modal for mobile */
+  .book-now-slct_exprnce {
+    width: 90%;
+    top: 30%;
+  }
+
+  .hotel-footer {
+    padding: 30px 10px;
+  }
+
+  .hotel-footer .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .select-book .rooms {
+    flex-direction: column;
+  }
+
+  .select-book .room {
+    flex-direction: column;
+  }
+
+  .select-book .room img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .select-book .details {
+    padding: 10px;
+  }
+
+  .book_now-btn {
+    width: 180px;
+    height: 40px;
+    bottom: 120px;
+  }
+
+  .cart-section {
+    width: 100%;
+    top: auto;
+    position: relative;
+    padding: 20px;
+  }
+
+  .select-book .sort {
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+    bottom: 0;
+  }
+
+  .register .register-left {
+    width: 100%;
+    height: auto;
+  }
+
+  .register .register-right {
+    padding: 2rem;
+  }
+
+  .register .register-left img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .welcome-section {
+    padding: 20px;
+  }
+
+  .welcome-title {
+    font-size: 36px;
+  }
+
+  .book_now-btn {
+    width: 180px;
+    height: 40px;
+    bottom: 80px;
+  }
+
+  /* Apply to cart and other small sections for mobile */
+  .cart-icon {
+    font-size: 18px;
+  }
+
+  .cart-title {
+    font-size: 1rem;
+  }
+
+  .cart-total {
+    font-size: 1.1rem;
+  }
+
+  .custom-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .custom-btn {
+    width: 150px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* For very small screens like mobile devices in portrait mode */
+  .container {
+    padding: 0 10px;
+  }
+
+  .book-now-slct_exprnce {
+    width: 95%;
+    top: 25%;
+  }
+
+  .navbar {
+    height: 50px;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 14px;
+  }
+
+  .room-details {
+    padding: 0 10px;
+  }
+
+  .book-now_room-list .room-card {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .select-book .rooms {
+    flex-direction: column;
+  }
+
+  .select-book .room img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .select-book .details {
+    padding: 10px;
+  }
+
+  .book_now-btn {
+    width: 160px;
+    height: 40px;
+    bottom: 60px;
+  }
+
+  .register .register-right {
+    padding: 1rem;
+  }
+
+  .select-btn {
+    width: 90px;
+  }
+
+  .cart-section {
+    position: relative;
+    padding: 10px;
+    top: 10px;
+  }
+
+  .select-book .content {
+    padding: 0;
+  }
+
+  .select-book .sort {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+  }
+
+  .cart-icon {
+    font-size: 16px;
+  }
+
+  .cart-title {
+    font-size: 0.9rem;
+  }
+
+  .cart-total {
+    font-size: 1rem;
+  }
+
+  .custom-btn {
+    width: 140px;
+    height: 30px;
+  }
+
+  .personalized-section {
+    margin: 10px;
+  }
+}

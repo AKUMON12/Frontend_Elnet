@@ -1,0 +1,91 @@
+body.admin-dashboard {
+    background-color: #f9f9f9;
+    font-family: 'Merriweather Sans', sans-serif;
+    height: 100%;
+}
+
+.main-section {
+    padding: 20px;
+}
+
+
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dashboard-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.dashboard-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dashboard-card .card-content {
+    color: #666;
+}
+
+.large-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
+
+/* Profile Section Styles */
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-role {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.profile-card .btn {
+    margin-top: 10px;
+    width: 100%;
+}
